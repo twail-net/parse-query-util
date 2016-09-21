@@ -13,7 +13,7 @@ npm install --save-dev git+https://github.com/twail-net/parse-query-util.git
 In typescript (javascript is similar):
 
 ```typescript
-import getAllObjects, foldAllObjects from "parse-query-util";
+import { getAllObjects, foldAllObjects } from "parse-query-util";
 
 const query = new Parse.Query("Car")
     .equalTo("owner", "David Beckham");
