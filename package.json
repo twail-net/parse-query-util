@@ -4,8 +4,8 @@
   "description": "Utility functions for large parse queries",
   "author": "TWAIL UG",
   "homepage": "https://github.com/twail-net/parse-query-util",
-  "main": "dist/query-util.js",
-  "typings": "dist/query-util.d.ts",
+  "main": "src/query-util.js",
+  "typings": "src/query-util.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/twail-net/parse-query-util.git"
@@ -18,6 +18,8 @@
     "parse": "~1.9.1"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "parse-mockdb": "^0.1.17",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
   },

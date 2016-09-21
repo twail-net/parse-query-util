@@ -23,7 +23,10 @@ coverage
 build/Release
 
 # compiled files
-dist/
+src/*.js
+src/*.d.ts
+test/*.js
+test/*.d.ts
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
