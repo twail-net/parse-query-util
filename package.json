@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "Utility functions for large parse queries",
   "author": "TWAIL UG",
-  "homepage": "https://bitbucket.org/jobme2/backend#readme",
+  "homepage": "https://github.com/twail-net/parse-query-util",
   "main": "src/query-util.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/jobme2/backend.git"
+    "url": "git+https://github.com/twail-net/parse-query-util.git"
   },
   "license": "ISC",
   "scripts": {
