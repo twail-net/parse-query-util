@@ -5,7 +5,7 @@ Provides utility functions for large parse queries (i.e. with more than 1000 res
 ## Installation
 
 ```bash
-npm install --save-dev git+https://github.com/twail-net/parse-query-util.git
+npm install --save-dev parse-query-util
 ```
 
 ## Usage
