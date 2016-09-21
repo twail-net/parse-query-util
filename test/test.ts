@@ -45,4 +45,12 @@ describe("query-util:", () => {
         });
     });
 
+    describe("countAllObjects", () => {
+        it("returns correct count", done => {
+            ParseQueryUtil.countAllObjects(query).then(cnt => {
+                expect(cnt).to.equal(CAR_CNT);
+            }).then(() => done(), done);
+        });
+    });
+
 });
