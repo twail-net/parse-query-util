@@ -1,3 +1,7 @@
 tsconfig.json
 typings.json
-test
+test/
+typings/
+node_modules/
+*~
+.npmignore
