@@ -1,6 +1,6 @@
 {
   "name": "parse-query-util",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility functions for large parse queries",
   "author": "TWAIL UG",
   "homepage": "https://github.com/twail-net/parse-query-util",
@@ -12,8 +12,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "postinstall": "typings install",
-    "prepublish": "tsc",
+    "prepublish": "typings install && tsc",
     "test": "mocha"
   },
   "dependencies": {
