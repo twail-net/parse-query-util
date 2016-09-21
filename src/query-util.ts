@@ -1,5 +1,3 @@
-/// <reference path="../typings/index.d.ts" />
-
 export function foldAllObjects<T>(query: Parse.Query,
                            akku: T,
                            f: (akku: T, objs: Parse.Object[]) => T,
