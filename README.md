@@ -40,3 +40,9 @@ foldAllObjects(query,
         // do smth with that number
     });
 ```
+
+# Test
+
+```bash
+npm test
+```

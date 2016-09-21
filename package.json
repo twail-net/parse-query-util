@@ -12,7 +12,8 @@
   },
   "license": "ISC",
   "scripts": {
-    "postinstall": "typings install && tsc"
+    "postinstall": "typings install && tsc",
+    "test": "mocha"
   },
   "dependencies": {
     "parse": "~1.9.1"
