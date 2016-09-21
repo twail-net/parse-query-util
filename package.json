@@ -5,6 +5,7 @@
   "author": "TWAIL UG",
   "homepage": "https://github.com/twail-net/parse-query-util",
   "main": "dist/query-util.js",
+  "typings": "dist/query-util.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/twail-net/parse-query-util.git"
