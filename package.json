@@ -1,0 +1,26 @@
+{
+  "name": "parse-query-util",
+  "version": "0.0.1",
+  "description": "Utility functions for large parse queries",
+  "author": "TWAIL UG",
+  "homepage": "https://bitbucket.org/jobme2/backend#readme",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/jobme2/backend.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "typings install"
+  },
+  "dependencies": {
+    "parse": "~1.9.1"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
+  },
+  "engines": {
+    "node": ">=4.3"
+  }
+}
