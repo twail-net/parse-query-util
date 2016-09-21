@@ -8,5 +8,8 @@
   "globalDevDependencies": {
     "mocha": "registry:dt/mocha#2.2.5+20160720003353",
     "parse-mockdb": "registry:dt/parse-mockdb#0.1.13+20160919223142"
+  },
+  "devDependencies": {
+    "chai": "registry:npm/chai#3.5.0+20160723033700"
   }
 }
