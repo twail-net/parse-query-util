@@ -38,5 +38,5 @@ foldAllObjects(query,
     },
     { sessionToken: "blah" }).then(allColorsOfMyCars => {
         // do smth with that number
-    };
+    });
 ```
