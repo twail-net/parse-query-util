@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "mocha": "^3.0.2",
     "parse-mockdb": "^0.1.17",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
