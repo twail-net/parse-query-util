@@ -1,10 +1,9 @@
-export function foldAllObjects<T>(query: Parse.Query,
-                           akku: T,
-                           f: (akku: T, objs: Parse.Object[]) => T,
+export function foldAllObjects<S>(query: Parse.Query,
+                           akku: S,
+                           f: (akku: S, objs: Parse.Object[]) => S,
                            options?: Parse.Query.FindOptions,
-                           offset?: number): Parse.IPromise<T> {
+                           offset: number = 0): Parse.IPromise<S> {
     const MAX_LIMIT = 1000;
-    offset = offset || 0;
 
     return query
         .limit(MAX_LIMIT)
@@ -22,7 +21,7 @@ export function foldAllObjects<T>(query: Parse.Query,
 }
 
 export function getAllObjects<T extends Parse.Object>(query: Parse.Query, options?: Parse.Query.FindOptions): Parse.IPromise<T[]> {
-    return foldAllObjects(query, [], (akku, objs) => akku.concat(objs), options);
+    return foldAllObjects<T[]>(query, [], (akku, objs: T[]) => akku.concat(objs), options);
 }
 
 export function countAllObjects(query: Parse.Query, options?: Parse.Query.FindOptions): Parse.IPromise<number> {

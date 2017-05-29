@@ -1,8 +1,8 @@
 {
   "name": "parse-query-util",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Utility functions for large parse queries",
-  "author": "TWAIL UG",
+  "author": "TWAIL GmbH",
   "homepage": "https://github.com/twail-net/parse-query-util",
   "main": "src/query-util.js",
   "typings": "src/query-util.d.ts",
@@ -12,18 +12,19 @@
   },
   "license": "MIT",
   "scripts": {
-    "prepublish": "typings install && tsc",
+    "prepublish": "tsc",
     "test": "mocha"
   },
   "dependencies": {
     "parse": "~1.9.1"
   },
   "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/parse": "~1.9.0",
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
     "parse-mockdb": "^0.1.17",
-    "typescript": "^1.8.10",
-    "typings": "^1.0.4"
+    "typescript": "^2.3.0"
   },
   "engines": {
     "node": ">=4.3"

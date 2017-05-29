@@ -16,20 +16,18 @@ describe("query-util:", () => {
     const CAR_CNT = 5000;
     const query = new Parse.Query(Car).equalTo("owner", "A");
 
-    before(done => {
+    before(async () => {
         ParseMockDB.mockDB();
 
-        let p: Parse.IPromise<Parse.Object> = Parse.Promise.as(null);
         for (let i = 0; i < CAR_CNT; ++i) {
-            p = p.then(() => new Car().save({
+            await new Car().save({
                 owner: "A"
-            }));
+            });
         }
-        p.then(() =>
-            new Car().save({
-                owner: "B"
-            })
-        ).then(() => done(), done);
+
+        await new Car().save({
+            owner: "B"
+        });
     })
 
     after(() => {
@@ -37,19 +35,19 @@ describe("query-util:", () => {
     });
 
     describe("getAllObjects", () => {
-        it("returns all objects", done => {
-            ParseQueryUtil.getAllObjects(query).then(objs => {
-                expect(objs.length).to.equal(CAR_CNT);
-                expect(objs[0].className).to.equal("Car");
-            }).then(() => done(), done);
+        it("returns all objects", async () => {
+            const objs = await ParseQueryUtil.getAllObjects(query);
+
+            expect(objs.length).to.equal(CAR_CNT);
+            expect(objs[0].className).to.equal("Car");
         });
     });
 
     describe("countAllObjects", () => {
-        it("returns correct count", done => {
-            ParseQueryUtil.countAllObjects(query).then(cnt => {
-                expect(cnt).to.equal(CAR_CNT);
-            }).then(() => done(), done);
+        it("returns correct count", async () => {
+            const cnt = await ParseQueryUtil.countAllObjects(query);
+
+            expect(cnt).to.equal(CAR_CNT);
         });
     });
 
