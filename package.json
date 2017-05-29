@@ -19,6 +19,7 @@
     "parse": "~1.9.1"
   },
   "devDependencies": {
+    "@types/chai": "^3.5.2",
     "@types/mocha": "^2.2.41",
     "@types/parse": "~1.9.0",
     "chai": "^3.5.0",
